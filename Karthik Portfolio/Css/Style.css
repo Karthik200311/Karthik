@@ -1,0 +1,210 @@
+/* Font input */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    /* Global Variables */
+    :root{
+
+        /* Color */
+    --ink-black: #011627ff;
+    --strawberry-red: #f71735ff;
+    --turquoise: #41ead4ff;
+    --porcelain: #fdfffcff;
+    --amber-glow: #ff9f1cff;
+
+        /* Fonts */
+    --font-Display:"Monoton", sans-serif;
+    --font-Normal:"Nunito", sans-serif;
+    --font-Para:"Noto Serif", serif;
+    --font-Bold:"Boldonse", system-ui;
+    }
+
+/* viedo background */
+    video{
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+    }
+
+/* Header Start Web_Logo_Box_Section */
+header{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    background-color: var(--ink-black);
+    position: sticky;
+    top:0px;
+    z-index: 80;
+}
+.Web_Logo_Box{
+    display: inline-block;
+}
+.Web_Logo{
+    margin-top: 15px;
+    margin-left: 15px;    
+}
+
+.Web_Logo h3 a{
+      font-family: var(--font-Display);
+      font-weight: 800;
+      color: var(--porcelain);
+      letter-spacing: 4px;
+      font-size: 23px;
+      cursor: pointer;
+      text-decoration: none;
+    
+    }
+.Web_Logo h3:active a{
+    color: var(--strawberry-red);
+}
+
+/* Navigation Menu Section */
+.Navigation_Menu_box{
+    margin-top: -65px;
+}
+
+.Navigation_Menu_List {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.Navigation_Menu_List a{
+    padding: 20px;
+    margin-left: 90px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: var(--porcelain);
+    font-family: var(--font-Normal);
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.Navigation_Menu_List a:hover{
+    color: var(--amber-glow);
+}
+.Btn_Download:hover{
+    box-shadow: 0.1px 0.1px 5px var(--turquoise);
+    border-radius: 50px;
+}
+
+    /* Line Decoration */
+.line{
+    position: fixed;
+    top: 88px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--amber-glow);
+    padding: 10px
+    z-index: 80;
+}
+
+  /* Hero Section */
+.hero_section_box{
+    background-color: var(--strawberry-red);
+    width: 100%;
+    height: 100%;
+}
+.hero_section_box{
+  position: relative;
+}
+
+.hero_section_image{
+position: absolute;
+right: -88%;
+object-fit: contain;
+}
+
+.hero_section_image img{
+    width: 27.3%;
+    filter: drop-shadow(2px 2px 30px var(--porcelain))
+}
+
+.hero_section_Title{
+    position: absolute;
+    top: 250px;
+    width: 45%;
+    margin-left: 12%;
+} 
+
+.There{
+    position: relative;
+    top: 40px;
+    color: var(--porcelain);
+}
+.name{
+    font-family: var(--font-Para);
+    color: white;
+}
+
+.Karthik{
+    text-transform: uppercase;
+    font-family: var(--font-Bold);
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 15px;
+    color: yellow;
+    filter: drop-shadow(5px 5px 8px black);
+}
+
+.Edu{
+   color: var(--porcelain);
+   margin: 10px 0;
+   margin-top:-5px;  
+}
+
+.Bestline{
+    color: var(--turquoise);
+    text-transform: uppercase;
+}
+.Intro{
+    padding: 20px 0px;
+    color: var(--porcelain);
+    margin-top: -20px;
+    width: 40%;
+}
+
+/* Button Design */
+.contact_me button a{
+    text-decoration: none;
+    color: var(--turquoise);
+    font-weight: 800;
+    font-size: 15px;
+}
+.contact_me button{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 3px double var(--porcelain);
+    background-color: var(--ink-black);
+    box-shadow: 0px 1px 10px var(--turquoise);
+}
+.line1{
+    background-color: var(--amber-glow);
+    width: 100%;
+    height: 1%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.About_Section_box{
+    height: 50px;
+
+}
+
+
+
+
+
+
+
