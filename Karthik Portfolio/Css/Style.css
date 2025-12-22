@@ -40,8 +40,8 @@ header{
     display: block;
     width: 100%;
     background-color: var(--ink-black);
-    position: sticky;
-    top:0px;
+    position: sticky; !important
+    top: 0px;
     z-index: 80;
 }
 .Web_Logo_Box{
@@ -101,8 +101,9 @@ header{
 
     /* Line Decoration */
 .line{
-    position: fixed;
-    top: 88px;
+    position: sticky;
+    top:0px;
+    z-index: 80;    
     width: 100%;
     height: 4px;
     background-color: var(--amber-glow);
@@ -121,13 +122,15 @@ header{
 }
 
 .hero_section_image{
-position: absolute;
-right: -88%;
-object-fit: contain;
+    position: absolute;
+    right: -75%;
+    object-fit: contain;
 }
-
+.Image_container{
+    
+}
 .hero_section_image img{
-    width: 27.3%;
+    width: 28%;
     filter: drop-shadow(2px 2px 30px var(--porcelain))
 }
 
@@ -194,17 +197,65 @@ object-fit: contain;
     width: 100%;
     height: 1%;
     position: absolute;
+    z-index: 20;
     bottom: 0px;
 }
 
-.About_Section_box{
-    height: 50px;
+    /* About Section */
+
+.About_Section{
+    position: absolute;
+    top: 970px;
+    z-index: 0;
+    width: 100%;
+    height: 600px;
+    background-color:var(--ink-black);
+}
+
+.About_Section_box h3{
+    vertical-align: middle;
+    height: 100px;
+    font-size: 20px;
+    color: var(--porcelain);
+    position: relative;
+    top: 50px;
+    left: 500px;
+    font-family: var(--font-Bold);
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;  
+}
+.image_box img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    left: 50px;
+    top:-50px;
 
 }
 
+/* Skills Section */
 
+.Skills_Box{
+    position: absolute;
+    top: 1550px;
+    z-index: 0;
+    width: 100%;
+    height: 500px;
+    background-color:var(--turquoise);
+}
 
+/* Experience Section */
 
+.Experience_box{
+    position: absolute;
+    top: 1900px;
+    z-index: 0;
+    width: 100%;
+    height: 500px;
+    background-color:var(--ink-black); 
+}
 
-
+/* Footer Section */
 
