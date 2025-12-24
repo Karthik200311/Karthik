@@ -32,6 +32,8 @@
         position: absolute;
         z-index: 0;
         object-fit: cover;
+        width: 1904px;
+        height: 1500px;
     }
 
 /* Header Start Web_Logo_Box_Section */
@@ -117,21 +119,24 @@ header{
     width: 100%;
     height: 100%;
 }
-.hero_section_box{
-  position: relative;
+.Image_container{
+    height: 50%;
+}
+.Image{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    left: 55%
+}
+.hero_section_image{
+    position: relative;
+    top: 110px;
+    left: 50%;
+    object-fit: contain;
 }
 
 .hero_section_image{
-    position: absolute;
-    right: -75%;
-    object-fit: contain;
-}
-.Image_container{
-    
-}
-.hero_section_image img{
-    width: 28%;
-    filter: drop-shadow(2px 2px 30px var(--porcelain))
+    filter: drop-shadow(2px 2px 30px var(--turquoise))
 }
 
 .hero_section_Title{
@@ -139,6 +144,7 @@ header{
     top: 250px;
     width: 45%;
     margin-left: 12%;
+    padding: 60px;
 } 
 
 .There{
@@ -155,7 +161,7 @@ header{
     text-transform: uppercase;
     font-family: var(--font-Bold);
     font-weight: 800;
-    font-size: 60px;
+    font-size: 90px;
     letter-spacing: 15px;
     color: yellow;
     filter: drop-shadow(5px 5px 8px black);
@@ -198,7 +204,7 @@ header{
     height: 1%;
     position: absolute;
     z-index: 20;
-    bottom: 0px;
+    bottom: 12px;
 }
 
     /* About Section */
@@ -280,7 +286,7 @@ header{
     object-fit: cover;
     width: 1905px;
     height: 500px;
-    opacity: 30;
+    filter: opacity(50%);
 }
 .Icons_1{
     position: absolute;
@@ -298,7 +304,7 @@ header{
 }
 .Center_2{
     position: relative;
-    left: 28px;
+    left: 60px;
 }
 .Skills_Box{
     position: absolute;
@@ -373,14 +379,51 @@ header{
 /* My Works Section */
 
 .My_Works_box{
+    margin-top: 10px;
     position: absolute;
     top: 1900px;
     z-index: 90;
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-color:var(--ink-black);
-     
 }
 
+.My_Works{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 200px; 
+    padding: 10px; 
+    background-color: var(--turquoise);
+}
+.img{
+    margin-left: 15px;
+    width: 500px;
+    height: 180px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px ;
+}
+
+.button{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient();
+}
+.button:hover{
+    background-color: var(--turquoise);
+    color: var(--strawberry-red);
+}
+.button a{
+    color:var(--ink-black);
+    text-decoration: none;
+}
 /* Footer Section */
 
