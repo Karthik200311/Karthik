@@ -42,7 +42,7 @@ header{
     background-color: var(--ink-black);
     position: sticky; !important
     top: 0px;
-    z-index: 80;
+    z-index: 99;
 }
 .Web_Logo_Box{
     display: inline-block;
@@ -209,7 +209,7 @@ header{
     object-fit: cover;
     position: relative;
     left: 50px;
-    top:-310px;
+    top:-420px;
 }
 
 .About_Section{
@@ -265,32 +265,105 @@ header{
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 350px;
+    top: 420px;
     left: 25%;
 }
 
 
 /* Skills Section */
-
+.background_Web{
+    position: relative;
+    top: 0px;
+    z-index: -60;
+}
+.Background_video{
+    object-fit: cover;
+    width: 1905px;
+    height: 500px;
+    opacity: 30;
+}
 .Skills_Box{
     position: absolute;
     top: 1550px;
-    z-index: 0;
+    z-index: 2;
     width: 100%;
     height: 500px;
-    background-color:var(--turquoise);
+    background-color: black;
+}
+.Skills_Box .Skill_Soft{
+    position: relative;
+    top: 18px;
 }
 
-/* Experience Section */
+.Skill_Soft,.Software_Tools,.Coding_Languages{
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    padding: 40px;
+    margin: 0 188px;
+    border-radius: 20px;
+    margin-top: 45px;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 25px;
+    color: gainsboro;
+    outline: 2px dotted var(--porcelain);
+    outline-offset: 3px;
+    outline-color: yellow;
+    box-shadow: 0px 0px 60px orange;
+    color: var(--amber-glow);
+}
 
-.Experience_box{
+.Skill_Soft:hover,.Software_Tools:hover,.Coding_Languages:hover{
+    color: white;
+}
+
+.Skill_Soft>h3,.Software_Tools>h3,.Coding_Languages>h3{
+    margin-bottom: 10px;
+}
+.Skill_Soft h3 {
+    color: var(--strawberry-red);
+}
+.Software_Tools h3 {
+    color: rgb(0, 174, 255);
+}
+.Coding_Languages h3 {
+  color:rgb(0, 255, 0);
+}
+.Skill_Soft li::marker{
+    color: var(--strawberry-red);
+}
+.Software_Tools li::marker{
+    color: rgb(0, 119, 255);
+}
+.Coding_Languages li::marker{
+    color:green;
+}
+.hr_line1{
+    color: yellow;
+    position: relative;
+    top: 25px;
+    background-color: var(--strawberry-red);
+}
+.hr_line2{
+    color: orange;
+    position: relative;
+    bottom: -40px;
+    background-color: var(--strawberry-red);
+}
+/* My Works Section */
+
+.My_Works_box{
     position: absolute;
     top: 1900px;
-    z-index: 0;
+    z-index: 90;
     width: 100%;
     height: 500px;
-    background-color:var(--ink-black); 
+    background-color:var(--ink-black);
+     
 }
+
+
 
 /* Footer Section */
 
