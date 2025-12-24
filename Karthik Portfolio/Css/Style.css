@@ -282,6 +282,24 @@ header{
     height: 500px;
     opacity: 30;
 }
+.Icons_1{
+    position: absolute;
+    top: 115px;
+    left: 570px;
+}
+.Center_1{
+    position: relative;
+    left: 28px;
+}
+.Icons_2{
+    position: absolute;
+    top: 115px;
+    left: 1210px;
+}
+.Center_2{
+    position: relative;
+    left: 28px;
+}
 .Skills_Box{
     position: absolute;
     top: 1550px;
@@ -351,6 +369,7 @@ header{
     bottom: -40px;
     background-color: var(--strawberry-red);
 }
+
 /* My Works Section */
 
 .My_Works_box{
@@ -362,8 +381,6 @@ header{
     background-color:var(--ink-black);
      
 }
-
-
 
 /* Footer Section */
 
