@@ -203,6 +203,15 @@ header{
 
     /* About Section */
 
+    .image_box img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    left: 50px;
+    top:-310px;
+}
+
 .About_Section{
     position: absolute;
     top: 970px;
@@ -211,29 +220,55 @@ header{
     height: 600px;
     background-color:var(--ink-black);
 }
+.About_Title {
+    margin-left: 500px;
+}
+
+.About_Title h5{
+    margin-top: 30px;
+    color: var(--porcelain);
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 26px;
+}
+
+.About_Title p{
+    color: var(--porcelain);
+    width: 800px;
+    text-transform: none;
+    margin-top: 20px;
+    line-height: 40px;
+}
 
 .About_Section_box h3{
-    vertical-align: middle;
     height: 100px;
     font-size: 20px;
     color: var(--porcelain);
     position: relative;
     top: 50px;
-    left: 500px;
+    left: 0px;
     font-family: var(--font-Bold);
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 5px;  
 }
-.image_box img{
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-    position: relative;
-    left: 50px;
-    top:-50px;
 
+.Developer img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    right: 8%;
 }
+
+.Animation_about img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 350px;
+    left: 25%;
+}
+
 
 /* Skills Section */
 
