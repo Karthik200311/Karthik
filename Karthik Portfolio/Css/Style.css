@@ -42,9 +42,9 @@ header{
     display: block;
     width: 100%;
     background-color: var(--ink-black);
-    position: sticky; !important
+    position: sticky;
     top: 0px;
-    z-index: 99;
+    z-index: 150;
 }
 .Web_Logo_Box{
     display: inline-block;
@@ -103,19 +103,19 @@ header{
 
     /* Line Decoration */
 .line{
-    position: sticky;
+    position: sticky; 
     top:0px;
     z-index: 80;    
     width: 100%;
     height: 4px;
     background-color: var(--amber-glow);
     padding: 10px
-    z-index: 80;
+    z-index: 999    ;
 }
 
   /* Hero Section */
+
 .hero_section_box{
-    background-color: var(--strawberry-red);
     width: 100%;
     height: 100%;
 }
@@ -133,10 +133,6 @@ header{
     top: 110px;
     left: 50%;
     object-fit: contain;
-}
-
-.hero_section_image{
-    filter: drop-shadow(2px 2px 30px var(--turquoise))
 }
 
 .hero_section_Title{
@@ -163,14 +159,14 @@ header{
     font-weight: 800;
     font-size: 90px;
     letter-spacing: 15px;
-    color: yellow;
-    filter: drop-shadow(5px 5px 8px black);
+    color: yellow;: drop-shadow(5px 5px 8px black);
 }
 
 .Edu{
    color: var(--porcelain);
    margin: 10px 0;
-   margin-top:-5px;  
+   margin-top:-10px; 
+   font-size: 30px;
 }
 
 .Bestline{
@@ -209,13 +205,14 @@ header{
 
     /* About Section */
 
-    .image_box img{
+.image_box img{
     width: 400px;
     height: 500px;
     object-fit: cover;
     position: relative;
     left: 50px;
     top:-420px;
+    clear: right;
 }
 
 .About_Section{
@@ -286,7 +283,6 @@ header{
     object-fit: cover;
     width: 1905px;
     height: 500px;
-    filter: opacity(50%);
 }
 .Icons_1{
     position: absolute;
@@ -349,7 +345,7 @@ header{
     color: var(--strawberry-red);
 }
 .Software_Tools h3 {
-    color: rgb(0, 174, 255);
+    color: rgb(0, 174, 255);    
 }
 .Coding_Languages h3 {
   color:rgb(0, 255, 0);
@@ -393,8 +389,11 @@ header{
     flex-direction: row;
     justify-content: start;
     height: 200px; 
-    padding: 10px; 
+    padding: 10px;
+    border-radius: 30px;
     background-color: var(--turquoise);
+    overflow: hidden;
+    margin-left: 3px;
 }
 .img{
     margin-left: 15px;
@@ -409,21 +408,104 @@ header{
     margin: 0px auto;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 33px;
     padding: 10px 20px;
     border-radius: 50px;
     border-style: none;
     font-size: 15px;
     font-weight: 600;
-    background: linear-gradient();
+    background:linear-gradient(60deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
-.button:hover{
-    background-color: var(--turquoise);
+
+.button:focus{
+    background:linear-gradient(60deg,rgb(59, 0, 30) 0%, rgb(141, 0, 118) 35%, rgb(223, 0, 223) 100%);
+    color: var(--strawberry-red);
+}
+.button a:active{
     color: var(--strawberry-red);
 }
 .button a{
-    color:var(--ink-black);
+    color:var(--porcelain);
     text-decoration: none;
 }
-/* Footer Section */
 
+/* Footer Section */
+.footer_Section_box{
+    width: 100%;
+    height: 400px;
+    background-color: var(--turquoise);
+    position: absolute;
+    top: 200%;
+    z-index: 0;
+    margin: 0px ;
+}
+
+.footer_icons ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_icons ul li a{
+    fill: var(--ink-black);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 270px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 90px;
+}
+.footer_icons ul li a:focus{
+    fill: var(--amber-glow);
+}
+.footer_icons ul li a:active{
+    fill: var(--strawberry-red);
+}
+.Copyright{
+    color: gainsboro;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 235%;
+    z-index: 60;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ink-black);
+}
+
+.Name_of_Copy_right{
+    color: orange;
+}
+ /* Contact_Form_Icon */
+.Form_Box{
+    float: right;
+    clear: right;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+.Form_Icon{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 800px;
+    z-index: 600;
+    outline-offset: 5px dotted white;
+}
+.Form_Title p{
+    color: white;
+    background: radial-gradient (90deg,(rgba(71, 48, 128)) 0%,(rgb(18, 1, 63)));  
+    border-radius: 20px;
+    position: fixed;
+    top: 900px;
+    z-index: 600;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: -20px;
+    font-size: 15px;
+    font-family: var(--font-Normal);
+}
