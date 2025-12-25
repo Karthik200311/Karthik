@@ -168,7 +168,10 @@ header{
    margin-top:-10px; 
    font-size: 30px;
 }
-
+.Edu::selection{
+    color: aqua;
+    background-color: deeppink;
+}
 .Bestline{
     color: var(--turquoise);
     text-transform: uppercase;
