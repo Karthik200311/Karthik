@@ -1,15 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index_Form_Page</title>
 
     <!-- Link_Tags -->
-     <link rel="stylesheet" href="./Css/Index_From.css">
-     <link rel="icon" href="./Assts/Icon.png">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./Css/Index_From.css" />
+    <link rel="icon" href="./Assts/Icon.png" />
+  </head>
+  <body>
+    <!-- Background_video -->
+    <div class="Background_body_video">
+      <video muted loop autoplay width="100%" height="110%">
+        <source
+          src="./Assts/Background_Form.mp4"
+          class="Background_video_body"
+        />
+      </video>
+    </div>
+    <!-- Back_TO_Home_Navigation_Button -->
+    <div class="Back_to_Home">
+      <a href="Index.html">
+        <img src="./Assts/Back_to_page.png" width="30px" alt="Back_to_Home" />
+      </a>
+    </div>
+
+    <!-- Form_Box -->
+    <div class="Form_Box">
+      <div class="img">
+        <img
+          class="imge_Form"
+          src="./Assts/Form Image.jpeg"
+          alt="Form_Image_One"
+        />
+
+        <img
+          class="Welcome_Image"
+          src="./Assts/Welcome_Image.png"
+          alt="Welcome_Image"
+        />
+      </div>
+      Terms_conditions
+      <div class="Terms_conditions">
+        <h3>Terms & Conditions for Placeholder Content</h3>
+        <ol>
+          <li>
+            Acceptance: Use of this content signifies your acceptance of these
+            terms. <br />
+          </li>
+          <li>Purpose: For demonstration/layout only. <br /></li>
+          <li>
+            Disclaimer: "As is," no warranty, no liability for any errors or
+            damages [2, 5]. <br />
+          </li>
+          <li>Data: No personal data is collected or stored [2]. <br /></li>
+          <li>
+            Usage: Free for design and testing; you're responsible for its final
+            application [9]
+          </li>
+        </ol>
+        <br />
+        <p>
+          <input type="checkbox" class="Checkbox1" /> I Accept the all Terms &
+          Condition
+        </p>
+
+        <!--Design_in_Box -->
+        <div class="Design_in_box">
+          <div class="Iframe_container">
+            <iframe width="300px" height="420px" src="https://graphicdesignfundamentals.com/"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="selection">
+        <table>
+          <tr>
+            <td>
+              <select>
+                <option>Graphic Desigener</option>
+                <option>Web Font-End Desigener</option>
+                <option>Web Back-End Desigener</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Forms_page -->
+      <div class="form">
+        <from>
+          <ul>
+            <li>
+              First Name
+              <input
+                class="Fill"
+                type="text"
+                placeholder="First Name"
+                required
+              />
+            </li>
+            <li>
+              Last Name
+              <input class="Fill" type="text" placeholder="Last Name" />
+            </li>
+            <li>
+              Date Of Birth
+              <input
+                class="Fill"
+                type="date"
+                placeholder="DD/MM/YYYY"
+                required
+              />
+            </li>
+            <li>
+              Email
+              <input
+                class="Email"
+                type="email"
+                placeholder="tech***@gmail.com"
+                required
+              />
+            </li>
+
+            <li>
+              Phone Number
+              <input
+                class="Fill"
+                type="tel"
+                placeholder="+91 12345 67890"
+                pattern="+91 12345 67890"
+              />
+            </li>
+            <li>
+              Score
+              <input
+                class="Num"
+                type="number"
+                placeholder="Score"
+                min="50"
+                max="100"
+              />
+            </li>
+            <li>
+              Send Your Briefly Message
+              <textarea
+                placeholder=""
+                rows="25"
+                cols="100"
+              ></textarea>
+            </li>
+            <li>
+              <input class="checkbox2" type="checkbox" required /> You've
+              entered a contract, so it's in your interest to know what you
+              agreed to
+            </li>
+            <br />
+            <li><input type="file" class="File" /></li>
+            <br />
+            <li><input class="submit_button" type="submit" /></li>
+            <li><input class="reset" type="reset" /></li>
+          </ul>
+        </from>
+      </div>
+    </div>
+  </body>
 </html>
